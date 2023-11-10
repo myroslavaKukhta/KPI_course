@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Ubuntu+Mono&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    line-height: 1.6;
+    color: #ffcf0d;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+    background-image: conic-gradient(
+        at 125% 50%,
+        #b78cf7,
+        #ff7c94,
+        #ffcf0d,
+        #ff7c94,
+        #b78cf7
+    );
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+  }
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.title-label, .date-label, .text-label {
+    display: block;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.entry-text-title, .date {
+    width: 20em;
+    padding: 1em;
+    border-radius: 2px;
+    border: 1px solid #ffcf0d;
+    background-color: #F8EDE3;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 15px;
+}
+  
+.entry-text-title::placeholder {
+    color: black;
+    font-size: 1rem;
+}
+  
+.entry-text-title::-ms-value {
+    color:  #b78cf7;
+    font-size: 1rem;
+}
+
+.entry-text-box {
+    width: 100%;
+    height: 20em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 2px;
+    border: 1px solid #ffcf0d;
+    background-color: #F8EDE3;
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+    border-radius: 15px;
+  }
+
+.diary-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100vh;
+    gap: 1rem;
+    background-image: conic-gradient(
+        at 125% 50%,
+        #b78cf7,
+        #ff7c94,
+        #ffcf0d,
+        #ff7c94,
+        #b78cf7
+    );
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: #ffcf0d 0px 7px 29px 0px;
+    border: 1px solid #ffcf0d;
+}
+
+.entries-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+}
+
+.singel-day-container {
+    margin-top: 0;
+    padding: 20px;
+    border: 1px solid #ffcf0d;
+    background: #ff7c94;
+    border-radius: 15px;
+    box-shadow: #ffcf0d 0px 7px 29px 0px;
+}
+
+.headingDiv {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 450px;
+}
+
+button {
+    background-color: #ff7c94;
+    color:#ffcf0d;
+    font-family: 'Ubuntu Mono', monospace;
+    height: 70px;
+    width: 175px;
+    border: 1px solid #ffcf0d;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    box-shadow: #ffcf0d 0px 7px 29px 0px; 
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .diary-container {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .title-label, .date-label, .text-label {
+        font-size: 1rem;
+    }
+
+    .entry-text-box {
+        width: 80%;
+        margin: auto;
+    }
+
+    .entries-container{
+        max-width: 100%;
+    }
+  }
